@@ -1,0 +1,16 @@
+server:
+  port: 8005
+  servlet:
+    context-path: /api
+
+spring:
+  application:
+    name: compensation-system
+
+compensation:
+  approval-threshold: 100
+  max-daily-compensation: 500
+  high-frequency-threshold: 3
+  high-frequency-days: 7
+  scheduled:
+    cron: "0 */5 * * * ?"
